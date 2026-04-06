@@ -1,0 +1,159 @@
+@charset "utf-8";
+
+html {
+  font-size: 100%;
+}
+:root {
+  --color-base: #707070;
+  --font-family-base: sans-serif;
+}
+body {
+  color: var(--color-base);
+  font-family: var(--font-family-base);
+}
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+li {
+  list-style: none;
+}
+a {
+  color: var(--color-base);
+  text-decoration: none;
+}
+a:hover,
+a:focus {
+  opacity: 0.7;
+}
+
+/* 共通部分 */
+.wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.section__title {
+  margin-bottom: 25px;
+  font-weight: normal;
+}
+.section__title-en {
+  font-size: 2rem;
+}
+.section__title-ja {
+  font-size: 0.875rem;
+}
+@media screen and (min-width: 768px) {
+  .section__title-en {
+    font-size: 2.5rem;
+  }
+  .section {
+    margin-bottom: 40px;
+  }
+}
+
+/* Header */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.header__logo {
+  max-width: 120px;
+  line-height: 0;
+}
+.header__logo-link {
+  display: block;
+}
+.header__nav-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.header__nav-item {
+  font-size: 0.875rem;
+}
+@media screen and (min-width: 768px) {
+  .header {
+    padding-top: 35px;
+    padding-bottom: 35px;
+  }
+}
+
+/* MainVisual */
+.mainvisual__content {
+  margin-top: 50px;
+  text-align: center;
+}
+.mainvisual__lead {
+  font-size: 1rem;
+  font-weight: bold;
+}
+.mainvisual__text {
+  margin-top: 40px;
+  font-size: 0.875rem;
+}
+@media screen and (min-width: 768px) {
+  .mainvisual__content {
+    margin-top: 80px;
+  }
+  .mainvisual__lead {
+    font-size: 1.125rem;
+  }
+  .mainvisual__text {
+    margin-top: 45px;
+  }
+}
+
+/* Profile Section */
+.profile {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.profile__description {
+  font-size: 0.875rem;
+  line-height: 2;
+}
+@media screen and (min-width: 768px) {
+  .profile {
+    margin-top: 75px;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 80px;
+  }
+}
+
+/* Works Section */
+.works {
+  margin-top: 60px;
+}
+.works__list {
+  display: grid;
+  gap: 20px;
+}
+@media screen and (min-width: 768px) {
+  .works {
+    margin-top: 120px;
+  }
+  .works__list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Footer */
+.footer {
+  padding: 80px 0 20px;
+  text-align: center;
+}
+.footer__copyright {
+  font-size: 0.75rem;
+}
+@media screen and (min-width: 768px) {
+  .footer {
+    padding: 140px 0 20px;
+  }
+}
