@@ -33,23 +33,23 @@ a:focus {
   margin: 0 auto;
   padding: 0 20px;
 }
-.c-section__title {
+.c-section-title {
   margin-bottom: 25px;
   font-weight: normal;
 }
-.c-section__title-en {
+.c-section-title__en {
   display: block;
   font-size: 2rem;
 }
-.c-section__title-ja {
+.c-section-title__ja {
   display: block;
   font-size: 0.875rem;
 }
 @media screen and (min-width: 768px) {
-  .c-section__title {
+  .c-section-title {
     margin-bottom: 40px;
   }
-  .c-section__title-en {
+  .c-section--title__en {
     font-size: 2.5rem;
   }
 }
